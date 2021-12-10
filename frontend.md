@@ -20,7 +20,7 @@ Queremos desafiar você a desenvolver um projeto em Nuxt.js que atenda os seguin
 - Devemos ter uma página que mostre os detalhes de um conteúdo buscando-o através do `id` dele;
 
 ### 💾 E de onde vem esses dados?
-Como já mostrado em [Nossas Tecnologias](#nossas-tecnologias), trabalhamos bastante com API's GraphQL na Skore, portanto, disponibilizamos [essa API aqui](https://us-central1-challenge-334613.cloudfunctions.net/api/graphql) para o cumprimento desse desafio!
+Como já mostrado em [Nossas tecnologias](#-nossas-tecnologias), trabalhamos bastante com API's GraphQL na Skore, portanto, disponibilizamos [essa API aqui](https://us-central1-challenge-334613.cloudfunctions.net/api/graphql) para o cumprimento desse desafio!
 
 Dica: O link acima te leva para um playground onde você pode consumir as duas queries que serão importantes para este desafio: `listContents` e `getContentById`.
 
