@@ -18,7 +18,7 @@ Nós, da **Skore** somos *fanboys* de **TypeScript** e **Nest.js**, portanto, ca
 
 ## :notebook: Desafio
 
-Surgiu a necessidade de entregarmos uma plataforma de gerenciamento de conteúdos, e para que isso aconteça, precisamos disponibilizar uma API para o time de front-end, que atenda aos seguintes requisitos:
+Você deverá criar uma plataforma de gerenciamento de conteúdos, disponibilizando uma API para o time de front-end com os seguintes requisitos:
 
 - Essa API não será pública e será utilizada por dois níveis de usuário: administrador e estudante;
 - Os conteúdos deverão ser gerenciados (criação, atualização e deleção) **somente** por usuários administradores;
@@ -27,7 +27,7 @@ Surgiu a necessidade de entregarmos uma plataforma de gerenciamento de conteúdo
 - Os tipos permitidos de conteúdo serão: vídeo, pdf e imagem;
 - Será necessário contabilizar as visualizações **únicas** dos estudantes ao acessarem os detalhes do conteúdo;
 
-Sinta-se livre para desenvolver essa API da melhor maneira que lhe convir.
+Sinta-se livre para desenvolver esta API da melhor maneira que lhe convir.
 
 **OBS:** Não é necessário criar um sistema de login, apenas uma solução que funcione como uma camada de validação por tokens estáticos.
 
