@@ -1,10 +1,12 @@
 # Desafio Backend
 
-Esta é uma avaliação de código destinada à você, engenheiro de software backend, candidato à uma vaga na **Skore**. O objetivo é entender um pouco mais do seu conhecimento, criatividade e de suas práticas de desenvolvimento.
+Agradecemos muito o seu interesse em fazer parte do nosso time. :heart:
 
-Para a realização do desafio, crie o projeto em um repositório público no Github, e ao finalizar, nos envie o link.
+Para prosseguirmos, gostaríamos de desafiar você a realizar esse pequeno projeto para que possamos entender melhor como que você estrutura o seu código e quais as habilidades que possui hoje em dia.
 
-Boa sorte :)
+## :detective: O que iremos avaliar?
+
+Antes de entrarmos para a parte mais técnica, gostaríamos de dizer que aqui na Skore valorizamos muita a pró-atividade. Aqui temos a liberdade de sugerir mudanças técnicas e de produto nos projetos em que trabalhamos, e para deixar esse desafio o mais parecido com o nosso ambiente de trabalho, gostaríamos de ressaltar que você tem toda a liberdade de criação dentro dele.
 
 ## :rocket: Tecnologias na Skore
 
@@ -46,3 +48,7 @@ Sinta-se livre para desenvolver esta API da melhor maneira que lhe convir.
 ## :shrug: Ficou com alguma dúvida?
 
 Lidar com as incertezas é um valor muito importante dentro da **Skore**, e caso isso ocorra, pedimos que você tome as decisões necessárias e explique-as ao nos enviar o link do repositório.
+
+## :tada: Tudo pronto... E agora?!
+
+Após terminar o seu teste, pedimos que caso você ainda não tenha feito, crie um repositório no GitHub e nos envie o link dele, caso você não se sinta a vontade de deixá-lo público, dê permissão para o usuário com o email challenge@skore.io acessá-lo.
