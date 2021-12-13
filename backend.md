@@ -26,12 +26,12 @@ Você deverá criar uma plataforma de gerenciamento e visualização de conteúd
 - Os conteúdos deverão ser gerenciados (criação, atualização e deleção) **somente** por usuários administradores;
 - Os usuários estudantes poderão **apenas** visualizar a listagem dos conteúdos disponibilizados na plataforma, e os detalhes específicos de cada um;
 - Os conteúdos deverão ter obrigatoriamente nome, descrição, e tipo;
-- Os tipos permitidos de conteúdo serão: vídeo, pdf e imagem;
+- Deverão ser permitidas apenas três strings no tipo do conteúdo: `video`, `pdf` ou `image`;
 - Será necessário contabilizar as visualizações **únicas** dos estudantes ao acessarem os detalhes do conteúdo;
 
 Sinta-se livre para desenvolver esta API da melhor maneira que lhe convir.
 
-**OBS:** Não é necessário criar um sistema de login, apenas uma solução que funcione como uma camada de validação por tokens estáticos.
+**IMPORTANTE:** Não é necessário criar um sistema de login ou cadastro/gerenciamento de usuários, apenas uma solução que funcione como uma camada de validação por tokens estáticos.
 
 ## :fire: Dicas
 
