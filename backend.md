@@ -51,4 +51,4 @@ Lidar com as incertezas é um valor muito importante dentro da **Skore**, e caso
 
 ## :tada: Tudo pronto... E agora?!
 
-Após terminar o seu teste, pedimos que caso você ainda não tenha feito, crie um repositório no GitHub e nos envie o link dele, caso você não se sinta a vontade de deixá-lo público, dê permissão para o usuário com o email challenge@skore.io acessá-lo.
+Após terminar o seu teste, pedimos que caso ainda não tenha feito, crie um repositório no GitHub e nos envie o link dele, caso não se sinta a vontade de deixá-lo público, nos envie por email.
