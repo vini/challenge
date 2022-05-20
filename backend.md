@@ -10,10 +10,10 @@ Antes de entrarmos para a parte mais técnica, gostaríamos de dizer que aqui na
 
 ## :rocket: Tecnologias na Skore
 
-Nós, da **Skore** somos *fanboys* de **TypeScript** e **Nest.js**, portanto, caso você venha a fazer parte de nossa equipe, a stack com a qual você trabalhará será majoritariamente essa:
+Nós, da **Skore**, usamos a seguinte stack nos projetos:
 
 - Typescript
-- Nest.js
+- [Nest.js](https://nestjs.com)
 - Jest
 - Postgres / MongoDB
 - GraphQL
@@ -38,10 +38,6 @@ Sinta-se livre para desenvolver esta API da melhor maneira que lhe convir.
 - Aqui na **Skore** consideramos testes como parte essencial do trabalho de engenheiros, portanto encorajamos você à escrever testes de integração e unitários no desenvolvimento do desafio.
 
 - Para a persistência dos dados, seria legal se você utilizasse um banco real, sem mock de dados. Fique a vontade para escolher o banco/tecnologia que preferir.
-
-- Como dissemos anteriormente, somos *fanboys* de **Nest.js**, portanto gostaríamos que você utilizasse ao máximo as funcionalidades do framework.
-
-- Logs são parte fundamental de nosso trabalho, portanto gostaríamos que você adicionasse alguns logs aonde achar necessário.
 
 - Gostaríamos que o seu projeto tivesse soluções voltadas à performance. Mesmo que isto não seja aparente em uma pequena base de dados como é a proposta do desafio, queremos ver quais são suas ideias considerando escalabilidade à longo prazo.
 
