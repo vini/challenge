@@ -44,6 +44,6 @@ Testar aplicações fazem parte do dia a dia de qualquer pessoa desenvolvedora q
 
 
 ## 🎉 Tudo pronto... E agora?!
-Após terminar o seu desafio, pedimos que caso você ainda não tenha feito, crie um repositório no GitHub e nos envie o link dele, caso você não se sinta a vontade de deixá-lo público, dê permissão para o usuário com o email challenge@skore.io acessá-lo.
+Após terminar o seu teste, pedimos que caso ainda não tenha feito, crie um repositório no GitHub e nos envie o link dele, caso não se sinta a vontade de deixá-lo público, nos envie por email.
 
 Feito isso, a responsa agora é nossa! Iremos analisar o seu código e entraremos em contato assim que possível. 😊
