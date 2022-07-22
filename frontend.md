@@ -20,7 +20,7 @@ ou de PDF:
 
 ![Player - PDF](img/PDF.png 'Player de PDF')
 
-Gostaríamos que você realizasse esse teste tendo essa visão mais holística do produto. Tenha total liberdade tanto para replicar esses comportamentos ilustrados acima, quanto para criar algo que você ache mais interessante, sempre mantendo em mente os objetivos de **estimular** e **engajar** os usuários da plataforma. 
+Gostaríamos que você realizasse esse desafio tendo essa visão mais holística do produto. Tenha total liberdade tanto para replicar esses comportamentos ilustrados acima, quanto para criar algo que você ache mais interessante, sempre mantendo em mente os objetivos de **estimular** e **engajar** os usuários da plataforma. 
 
 ## 🕵️ O que iremos avaliar?
 Antes de entrarmos para a parte mais técnica, gostaríamos de dizer que aqui na Skore valorizamos muita a pró-atividade. Aqui temos a liberdade de sugerir mudanças técnicas e de produto nos projetos em que trabalhamos, e para deixar esse desafio o mais parecido com o nosso ambiente de trabalho, gostaríamos de ressaltar que você tem toda a liberdade de criação dentro dele.
