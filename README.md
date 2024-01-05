@@ -1,3 +1,3 @@
-# Desafios Skore
+# Desafios Learning.rocks
 
-Este repositório contém desafios para posições na Skore.
+Este repositório contém desafios para posições na Learning.rocks.
