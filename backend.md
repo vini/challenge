@@ -6,11 +6,11 @@ Para prosseguirmos, gostaríamos de desafiar você a realizar esse pequeno proje
 
 ## :detective: O que iremos avaliar?
 
-Antes de entrarmos para a parte mais técnica, gostaríamos de dizer que aqui na Skore valorizamos muita a pró-atividade. Aqui temos a liberdade de sugerir mudanças técnicas e de produto nos projetos em que trabalhamos, e para deixar esse desafio o mais parecido com o nosso ambiente de trabalho, gostaríamos de ressaltar que você tem toda a liberdade de criação dentro dele.
+Antes de entrarmos para a parte mais técnica, gostaríamos de dizer que aqui na Learning.Rocks valorizamos muita a pró-atividade. Aqui temos a liberdade de sugerir mudanças técnicas e de produto nos projetos em que trabalhamos, e para deixar esse desafio o mais parecido com o nosso ambiente de trabalho, gostaríamos de ressaltar que você tem toda a liberdade de criação dentro dele.
 
-## :rocket: Tecnologias na Skore
+## :rocket: Tecnologias na Learning.Rocks
 
-Nós, da **Skore**, usamos a seguinte stack nos projetos:
+Nós, da **Learning.Rocks**, usamos a seguinte stack nos projetos:
 
 - Typescript
 - [Nest.js](https://nestjs.com)
@@ -35,7 +35,7 @@ Sinta-se livre para desenvolver esta API da melhor maneira que lhe convir.
 
 ## :fire: Dicas
 
-- Aqui na **Skore** consideramos testes como parte essencial do trabalho de engenheiros, portanto encorajamos você à escrever testes de integração e unitários no desenvolvimento do desafio.
+- Aqui na **Learning.Rocks** consideramos testes como parte essencial do trabalho de engenheiros, portanto encorajamos você à escrever testes de integração e unitários no desenvolvimento do desafio.
 
 - Para a persistência dos dados, seria legal se você utilizasse um banco real, sem mock de dados. Fique a vontade para escolher o banco/tecnologia que preferir.
 
@@ -43,7 +43,7 @@ Sinta-se livre para desenvolver esta API da melhor maneira que lhe convir.
 
 ## :shrug: Ficou com alguma dúvida?
 
-Lidar com as incertezas é um valor muito importante dentro da **Skore**, e caso isso ocorra, pedimos que você tome as decisões necessárias e explique-as ao nos enviar o link do repositório.
+Lidar com as incertezas é um valor muito importante dentro da **Learning.Rocks**, e caso isso ocorra, pedimos que você tome as decisões necessárias e explique-as ao nos enviar o link do repositório.
 
 ## :tada: Tudo pronto... E agora?!
 
