@@ -51,14 +51,27 @@ npm run db:create_migration --name=create-xpto-table
 ### 🔍 O que será avaliado?
 
 ✅ **Funcionalidade** – O provisionador de conteúdos está funcionando corretamente?
-Sim
+Para fazer consulta de provision graphql playground sim, pode seguir esse exemplo:
+
+```graphql
+query {
+  provision(content_id: "CONTENT_ID_AQUI") {
+    id,
+    title,
+    description,
+    url,
+    cover,
+    type,
+    total_likes
+  }
+}
 
 ✅ **Qualidade do Código** – O código está organizado, reutilizável e fácil de manter?
 Não necessariamente, poderia ser adicionado outros padrões de desenvolvimento, tais como:
 Clean Arch, MVC, Design Patterns etc, para não atrasar a entrega, resolvi não trocar essa arch.
 
 ✅ **Escalabilidade** – O sistema suporta novos tipos de conteúdos facilmente?
-Como foi pedido adicionar um novo tipo de suporte para conteudo, no caso tipo Texto,
+Como foi pedido adicionar um novo tipo de suporte para conteudo, no caso tipo texto,
 decidi refatorar o tipo PDF para tipo Texto, e adicionei os formatos 9 formatos aceitos
 além do PDF: doc/docx, rtf, md, xml, json, csv, txt.
 
