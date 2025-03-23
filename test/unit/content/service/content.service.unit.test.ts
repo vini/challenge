@@ -45,11 +45,7 @@ export class ContentServiceUnitTest {
 
   @test
   async '[provision] Should throw BadRequestException if content type is missing'() {
-    // prettier-ignore
-    const textFileFormats = [
-      'txt', 'md', 'rtf', 'pdf', 'epub', 'docx',
-      'doc', 'csv', 'json', 'xml'
-    ];
+    const textFileFormats = ['txt', 'md', 'rtf', 'pdf', 'epub', 'docx', 'doc', 'csv', 'json', 'xml']
 
     for (const textFileFormat of textFileFormats) {
       const mockContentWithoutType = {
@@ -75,11 +71,7 @@ export class ContentServiceUnitTest {
 
   @test
   async '[provision] Should return provisioned FORMAT_TEXT_FILES content'() {
-    // prettier-ignore
-    const textFileFormats = [
-      'txt', 'md', 'rtf', 'pdf', 'epub', 'docx',
-      'doc', 'csv', 'json', 'xml'
-    ];
+    const textFileFormats = ['txt', 'md', 'rtf', 'pdf', 'epub', 'docx', 'doc', 'csv', 'json', 'xml']
 
     for (const textFileFormat of textFileFormats) {
       jest

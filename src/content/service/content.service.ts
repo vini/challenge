@@ -17,6 +17,27 @@ export class ContentService {
 
   constructor(private readonly contentRepository: ContentRepository) {}
 
+  validateTextFileExt(textFileExt: string): string {
+    const allowedTextFileExts = [
+      'txt',
+      'md',
+      'rtf',
+      'pdf',
+      'epub',
+      'docx',
+      'doc',
+      'csv',
+      'json',
+      'xml',
+    ]
+
+    if (allowedTextFileExts.includes(textFileExt)) {
+      return textFileExt
+    } else {
+      return ''
+    }
+  }
+
   async provision(contentId: string): Promise<ProvisionDto> {
     if (!contentId) {
       this.logger.error(`Invalid Content ID: ${contentId}`)
@@ -68,17 +89,7 @@ export class ContentService {
             url,
             allow_download: true,
             is_embeddable: false,
-            format:
-              'txt' ||
-              'md' ||
-              'rtf' ||
-              'pdf' ||
-              'epub' ||
-              'docx ' ||
-              'doc' ||
-              'csv' ||
-              'json' ||
-              'xml',
+            format: this.validateTextFileExt(path.extname(content.url || '').slice(1)),
             bytes,
             metadata: {
               author: 'Unknown',
