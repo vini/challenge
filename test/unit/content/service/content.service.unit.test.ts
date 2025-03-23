@@ -45,40 +45,60 @@ export class ContentServiceUnitTest {
 
   @test
   async '[provision] Should throw BadRequestException if content type is missing'() {
-    const mockContentWithoutType = {
-      ...this.mockContent('pdf'),
-      type: undefined,
-    } as any
+    // prettier-ignore
+    const textFileFormats = [
+      'txt', 'md', 'rtf', 'pdf', 'epub', 'docx',
+      'doc', 'csv', 'json', 'xml'
+    ];
 
-    jest.spyOn(this.contentRepository, 'findOne').mockResolvedValue(mockContentWithoutType)
+    for (const textFileFormat of textFileFormats) {
+      const mockContentWithoutType = {
+        ...this.mockContent(textFileFormat),
+        type: undefined,
+      } as any
 
-    const loggerSpy = jest.spyOn(this.contentService['logger'], 'warn').mockImplementation(() => {})
+      jest.spyOn(this.contentRepository, 'findOne').mockResolvedValue(mockContentWithoutType)
 
-    await expect(
-      this.contentService.provision('4372ebd1-2ee8-4501-9ed5-549df46d0eb0'),
-    ).rejects.toThrow(BadRequestException)
+      const loggerSpy = jest
+        .spyOn(this.contentService['logger'], 'warn')
+        .mockImplementation(() => {})
 
-    expect(loggerSpy).toHaveBeenCalledWith(
-      expect.stringContaining('Missing content type for ID=4372ebd1-2ee8-4501-9ed5-549df46d0eb0'),
-    )
+      await expect(
+        this.contentService.provision('4372ebd1-2ee8-4501-9ed5-549df46d0eb0'),
+      ).rejects.toThrow(BadRequestException)
+
+      expect(loggerSpy).toHaveBeenCalledWith(
+        expect.stringContaining('Missing content type for ID=4372ebd1-2ee8-4501-9ed5-549df46d0eb0'),
+      )
+    }
   }
 
   @test
-  async '[provision] Should return provisioned PDF content'() {
-    jest.spyOn(this.contentRepository, 'findOne').mockResolvedValue(this.mockContent('pdf', 'pdf'))
-    jest.spyOn(fs, 'existsSync').mockReturnValue(true)
-    jest.spyOn(fs, 'statSync').mockReturnValue({ size: 50000 } as fs.Stats)
+  async '[provision] Should return provisioned FORMAT_TEXT_FILES content'() {
+    // prettier-ignore
+    const textFileFormats = [
+      'txt', 'md', 'rtf', 'pdf', 'epub', 'docx',
+      'doc', 'csv', 'json', 'xml'
+    ];
 
-    const result = await this.contentService.provision('4372ebd1-2ee8-4501-9ed5-549df46d0eb0')
+    for (const textFileFormat of textFileFormats) {
+      jest
+        .spyOn(this.contentRepository, 'findOne')
+        .mockResolvedValue(this.mockContent('text', textFileFormat))
+      jest.spyOn(fs, 'existsSync').mockReturnValue(true)
+      jest.spyOn(fs, 'statSync').mockReturnValue({ size: 50000 } as fs.Stats)
 
-    expect(result).toMatchObject({
-      type: 'pdf',
-      allow_download: true,
-      is_embeddable: false,
-      format: 'pdf',
-      bytes: 50000,
-      metadata: { author: 'Unknown', pages: 1, encrypted: false },
-    })
+      const result = await this.contentService.provision('4372ebd1-2ee8-4501-9ed5-549df46d0eb0')
+
+      expect(result).toMatchObject({
+        type: 'text',
+        allow_download: true,
+        is_embeddable: false,
+        format: textFileFormat,
+        bytes: 50000,
+        metadata: { author: 'Unknown', pages: 1, encrypted: false },
+      })
+    }
   }
 
   @test
@@ -135,7 +155,10 @@ export class ContentServiceUnitTest {
       is_embeddable: true,
       format: 'avi',
       bytes: 1000000,
-      metadata: { duration: 10, resolution: '1080p' },
+      metadata: {
+        duration: 10,
+        resolution: '1080p',
+      },
     })
   }
 
@@ -209,7 +232,7 @@ export class ContentServiceUnitTest {
 
   @test
   async '[provision] Should log file system errors but not fail'() {
-    jest.spyOn(this.contentRepository, 'findOne').mockResolvedValue(this.mockContent('pdf', 'pdf'))
+    jest.spyOn(this.contentRepository, 'findOne').mockResolvedValue(this.mockContent('text', 'pdf'))
     jest.spyOn(fs, 'existsSync').mockImplementation(() => {
       throw new Error('File system error')
     })

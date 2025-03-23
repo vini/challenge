@@ -54,9 +54,9 @@ export class ContentService {
       throw new BadRequestException('Content type is missing')
     }
 
-    if (['pdf', 'image', 'video', 'link'].includes(content.type)) {
+    if (['text', 'image', 'video', 'link'].includes(content.type)) {
       switch (content.type) {
-        case 'pdf':
+        case 'text':
           return {
             id: content.id,
             title: content.title,
@@ -64,11 +64,21 @@ export class ContentService {
             created_at: content.created_at,
             description: content.description,
             total_likes: content.total_likes,
-            type: 'pdf',
+            type: 'text',
             url,
             allow_download: true,
             is_embeddable: false,
-            format: 'pdf',
+            format:
+              'txt' ||
+              'md' ||
+              'rtf' ||
+              'pdf' ||
+              'epub' ||
+              'docx ' ||
+              'doc' ||
+              'csv' ||
+              'json' ||
+              'xml',
             bytes,
             metadata: {
               author: 'Unknown',

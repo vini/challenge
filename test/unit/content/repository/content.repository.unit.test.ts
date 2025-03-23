@@ -16,7 +16,7 @@ export class ContentRepositoryUnitTest {
     url: 'http://localhost:3000/uploads/dummy.pdf',
     created_at: new Date('2025-01-31T23:39:54.236Z'),
     total_likes: 10,
-    type: 'pdf',
+    type: 'text',
   } as Content
 
   async before() {
