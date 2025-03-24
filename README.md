@@ -65,6 +65,7 @@ query {
     total_likes
   }
 }
+```
 
 ✅ **Qualidade do Código** – O código está organizado, reutilizável e fácil de manter?
 Não necessariamente, poderia ser adicionado outros padrões de desenvolvimento, tais como:
