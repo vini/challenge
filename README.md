@@ -1,3 +1,6 @@
+##Descrição do Projeto (adicionado 23/03/2025 por Vini)
+A Plataforma LXM da Learning Rocks é uma solução de educação corporativa desenvolvida para potencializar o aprendizado e a performance dos colaboradores dentro das empresas. Nosso modelo B2B atende organizações que desejam estruturar e gerenciar treinamentos obrigatórios, trilhas de conhecimento e capacitações personalizadas.
+
 ## Setup do projeto de backend
 
 ### Pré-requisitos
@@ -30,6 +33,22 @@ O que você precisa para configurar o projeto:
 6. Acesse o **Playground do GraphQL**:
    - 👉 [http://localhost:3000/graphql](http://localhost:3000/graphql)
 
+### Faça consultas no GraphQL Playground
+
+```graphql
+query {
+  provision(content_id: "CONTENT_ID_AQUI") {
+    id,
+    title,
+    description,
+    url,
+    cover,
+    type,
+    total_likes
+  }
+}
+```
+
 ### Tests
 
 Para rodar os testes:
@@ -51,34 +70,23 @@ npm run db:create_migration --name=create-xpto-table
 ### 🔍 O que será avaliado?
 
 ✅ **Funcionalidade** – O provisionador de conteúdos está funcionando corretamente?
-Para fazer consulta de provision graphql playground sim, pode seguir esse exemplo:
 
-```graphql
-query {
-  provision(content_id: "CONTENT_ID_AQUI") {
-    id,
-    title,
-    description,
-    url,
-    cover,
-    type,
-    total_likes
-  }
-}
-```
+Para fazer consulta de provision graphql playground sim, mas com certeza, sempre é bom implementar melhorias.
 
 ✅ **Qualidade do Código** – O código está organizado, reutilizável e fácil de manter?
+
 Não necessariamente, poderia ser adicionado outros padrões de desenvolvimento, tais como:
 Clean Arch, MVC, Design Patterns etc, para não atrasar a entrega, resolvi não trocar essa arch.
 
 ✅ **Escalabilidade** – O sistema suporta novos tipos de conteúdos facilmente?
-Como foi pedido adicionar um novo tipo de suporte para conteudo, no caso tipo texto,
+
+Como foi pedido para adicionar um novo tipo de conteúdo, no caso, o tipo texto,
 decidi refatorar o tipo PDF para tipo Texto, e adicionei os formatos 9 formatos aceitos
 além do PDF: doc/docx, rtf, md, xml, json, csv, txt.
 
 ✅ **Segurança** – A falha crítica foi corrigida?
-Identifiquei primeiramente ao rodar o npm install, 2 pacotes marcados como vulneraveis,
-então rodei um npm audit fix para corrigir as vulnerabilidades sem quebrar as dependencias, e também rodei um npm ci para reinstalar todos os pacotes, considerando o package-lock.json como referencia.
+
+Identifiquei primeiramente que, ao rodar o npm install, 2 pacotes com vulnerabilidade, então rodei um npm audit fix para corrigir as vulnerabilidades sem quebrar as dependencias, e também rodei um npm ci para reinstalar todos os pacotes, considerando o package-lock.json como referencia.
 
 Também identifiquei uma falha grave de segurança, o .env não estava no .gitignore, e para completar a token estava exposta, então adicionei ao .gitignore, criei um .env.example com valor vazio, subi, e deletei o .env e depois comitei, pode observar que não está mais exposto no repo, certos tipos de informações devem ser trocadas por outros canais.
 
@@ -88,3 +96,5 @@ Foi feito algumas adaptações nos testes, em vez de replicar para cada formato,
 
 ✅ **Documentação** – O README do seu projeto tem todas as informações necessárias?
 
+- Foi adicionado descrição do projeto.
+- Foi adicionado uma seção explicando como fazer consulta no graphql playground,
