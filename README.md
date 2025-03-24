@@ -1,4 +1,4 @@
-##Descrição do Projeto (adicionado 23/03/2025 por Vini)
+### Descrição do Projeto
 A Plataforma LXM da Learning Rocks é uma solução de educação corporativa desenvolvida para potencializar o aprendizado e a performance dos colaboradores dentro das empresas. Nosso modelo B2B atende organizações que desejam estruturar e gerenciar treinamentos obrigatórios, trilhas de conhecimento e capacitações personalizadas.
 
 ## Setup do projeto de backend
@@ -33,7 +33,7 @@ O que você precisa para configurar o projeto:
 6. Acesse o **Playground do GraphQL**:
    - 👉 [http://localhost:3000/graphql](http://localhost:3000/graphql)
 
-### Faça consultas no GraphQL Playground
+### Faça consultas no GraphQL Playground, exemplo:
 
 ```graphql
 query {
